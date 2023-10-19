@@ -3,16 +3,494 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <title>Cartzilla-Website</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+  
+    <style>
+       
+     header {
+        text-align: center;
+        margin-top: 20px;
+        padding: 10px;
+       
+        
+     }
+     .header-content {
+        display: flex;
+        align-items: center;
+     }
+    .brand-title {
+        padding-left: 60px;
+    }
+     .search-area {
+        display: flex;
+        justify-content: space-between;
+     } 
+     .search-bar {
+        display: flex;
+        margin-right: 15px;
+     }
+     .icons span {
+        margin-right: 15px;
+        font-size: 20px;
+     }
+     .sign {
+        font-size: 10px;
+        color: gray;
+    }
+    div {
+        font-size: 12px;
+        margin-right: 15px;
+    }
+    .cart-count {
+        background-color: red;
+        color: white;
+        width: 25px;
+        border-radius: 25px;
+        margin-right: 10px;
+        padding: 3px;
+        text-align: center;
+        display: inline-block;
+    }
+    .icons-container {
+        display: flex;
+        justify-content: space-between;
+        margin-right: 15px;
+    }
+    .navgation{
+       padding-left: 80px;
+      margin-bottom: 20px;
+      }
+    .bi-grid {
+        font-size: 20px;
+    }
+    .item1 {
+        font-size: 15px;
+        color: red;
+        display: flex;
+      align-items: center;
+     
+    }
+    .depart {
+        margin-right: 20px;
+    }
+   
+    nav span{
+        margin-right: 30px;
+        color: grey;
+       
+    }
+    nav span:hover {
+        background: plum;
+        color: white;
+        width: 45px;
+        padding: 10px;
+    }
+    .banner{
+      height: 200px;
+    }
+    .carousel-caption {
+      bottom: 150px;
+     }
+     
+    .contain {
+        font-size: 35px;
+        margin-top: 110px;
+        color: white;
+        }
+        .huge {
+            font-size: 50px;
+            font-weight: bold;
+            color: white;
+        }
+        .para {
+            font-size: 20px;
+            margin-bottom: 15px;
+            color: white;
+        }
+        #womens{
+     background-image: url("public/images/familypic.jpg");
+     width: 900px;
+     height: 400px;
+     background-size: cover;
+     position: sticky;
+    margin-top: -100px;
+     margin-left: 100px;
+     z-index: 1;
+    }
     
+    button {
+       border: none;
+       border-radius: 15px;
+       padding: 8px;
+       margin-left: 50px;
+    }
+    .img3 {
+        height: 870px;
+    }
+    .img2 {
+        height: 870px;
+    }
+     section{
+        height: 700px;
+     }
+    
+     .bi-currency-dollar {
+        color: blue;
+        font-size: 20px;
+     }
+     .bi-currency-dollar {
+       align-items: center;
+     }
+      .card-rating{
+        margin-left: 35px;
+        color: goldenrod;
+        font-size: 15px;
+      }
+    
+   </style>
 </head>
 <body class="container-fluid">
-  <div class="container-fluid">
- <img src="">
+<header>
+    <div class="header-content">
+        <div class="brand-title">
+            <img src="public/images/cartzilla.jpg" width="120">
+        </div>
+        <div class="search-area w-50">
+            <div class="input-group">
+                <input type="text" placeholder="Search for Product" class="form-control ">
+                <span class="input-group-text bi bi-search"></span>
+            </div>
+        </div>    
+        <div class="icons-container">
+            <div class="icons">
+                <span class="bi bi-heart"></span>
+                <span class="bi bi-person"></span>
+            </div> 
+            <div>
+                <div class="sign">Hello, sign in</div>
+                <div> My Account</div>
+            </div>
+            <span class="bi bi-cart"><span class="cart-count">4</span></span>
+        </div>
+        <div>
+            <div class="sign">My cart</div>
+            <div>$265,00<span class="bi bi-chevron-down"></span></div>
+        </div>
+    </div>
+    </header>
+    <div class="navgation">
+    <div class="item1">
+        <span class="bi bi-grid "></span>&nbsp;
+        <span class="depart">Departments<span class="bi bi-chevron-down"></span></span>
+        <nav>
+            <span class="text-danger highlight">Home</span>
+            <span>Shop</span>
+            <span>Account</span>
+            <span>Pages</span>
+            <span>Blog</span>
+            <span>Docs / Components</span>
+        </nav>
+      </div>
+    </div>
+   <article>
+    <div class="carousel slide carousel-dark"  id="topBanner" data-bs-ride="carousel">
+      <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-intervel="3000">
+       <img src="public/images/bn1.jpg" class="w-100 d-block">
+       <div class="carousel-caption">
+        <div class="contain h2">Has just arrived!</div> 
+        <div class="huge">Huge Summer Collection</div>
+        <div class="para">Swimwear,Tops,Shorts,Sunglasses & much more..</div>
+        <button class="btn btn-danger">Shop Now <span class="bi bi-chevron-right"></span></button>
+        </div>
+          </div>
+        <div class="carousel-item" data-bs-intervel="1000">
+    <img src="public/images/bn2.jpg" class="w-100 img2 d-block">
+    <div class="carousel-caption">
+      <div class="contain h2">Has just arrived!</div> 
+      <div class="huge">Huge Summer Collection</div>
+      <div class="para">Swimwear,Tops,Shorts,Sunglasses & much more..</div>
+      <button class="btn btn-danger">Shop Now <span class="bi bi-chevron-right"></span></button>
+      </div>
+        </div>
+        <div class="carousel-item" data-bs-intervel="5000">
+          <img src="public/images/bn3.jpg" class="w-100 img3 d-block">
+          <div class="carousel-caption">
+            <div class="contain h2">Has just arrived!</div> 
+            <div class="huge">Huge Summer Collection</div>
+            <div class="para">Swimwear,Tops,Shorts,Sunglasses & much more..</div>
+            <button class="btn btn-danger">Shop Now <span class="bi bi-chevron-right"></span></button>
+            </div>
+              </div>
+            </div>
+     <button class="carousel-control-prev" data-bs-slide="prev" data-bs-target="#topBanner">
+       <span class="carousel-control-prev-icon"></span>
+       </button>
+       <button class="carousel-control-next" data-bs-slide="next" data-bs-target="#topBanner">
+          <span class="carousel-control-next-icon"></span>
+          </button>
+          </div>
+         <div id="womens"></div>
+ </article>
+ <section>
+    <main class="d-flex">
+    <div class="card bg-light p-2 m-2" style="width:300px;">
+   <div class="card-header">
+    <span class="bi bi-heart d-flex justify-content-end"></span>
+    <img  class="card-img-top mt-3"height="125"  src="public/images/shoes.png" >
+   </div>
+   <div class="card-body">
+    <span>Sneakers & Keds</span>
+    <h6>Women colorblack Sneakers</h3><br>
+<div class="d-flex justify-content-between">
+    <span class="bi bi-currency-dollar ">154.00</span>
+    <div class="card-rating">
+    <span class="bi bi-star-fill"></span>
+    <span class="bi bi-star-fil"></span>
+    <span class="bi bi-star-fill"></span>
+    <span class="bi bi-star-fill"></span>
+    <span class="bi bi-star-fill"></span>
+    </div>
+</div>
+</div>
+<div class="card-footer">
+  
+    <button  data-bs-target="#Cart" data-bs-toggle="modal" class="btn btn-danger" >Add cart</button>
+     <div class="modal" id="Cart" >
+      <div class="modal-dialog modal-dialog-centered" >
+   <div class="modal-content">
+     <div class="modal-body">
+    <h6>PRICE DETAILS</h6>
+    <div class="d-flex justify-content-between">
+    <span>Price(1 item)</span> <span class="bi bi-currency-rupee">2,199</span>
+    </div><br>
+    <div class="d-flex justify-content-between">
+     <span>Discount</span> <span class="bi bi-currency-rupee text-success">300</span>
+     </div><br>
+     <div class="d-flex justify-content-between">
+         <span>Delivery charges</span> <span class="bi bi-currency-rupee"><strike>40</strike> Free</span>
+         </div><br>
+         <div class="d-flex justify-content-between">
+             <h6>Total Amount</h6> <span class="bi bi-currency-rupee">1,869</span>
+     </div><br><br>
+     <p class="text-success">You will save <span class="bi-currency-rupee">330</span>on this order</p>
+ 
+     </div>
+ 
+   </div>
+      </div>
+     </div>
   </div>
+</div>
+<div class="card bg-light p-2 m-2" style="width:300px;">
+    <div class="card-header">
+     <span class="bi bi-heart d-flex justify-content-end"></span>
+     <img  class="card-img-top mt-3"height="125"  src="public/images/bag.png" >
+    </div>
+    <div class="card-body">
+     <span>Sneakers & Keds</span>
+     <h6>Women colorblack Sneakers</h3><br>
+ <div class="d-flex justify-content-between">
+     <span class="bi bi-currency-dollar ">154.00</span>
+     <div class="card-rating">
+     <span class="bi bi-star-fill"></span>
+     <span class="bi bi-star-fil"></span>
+     <span class="bi bi-star-fill"></span>
+     <span class="bi bi-star-fill"></span>
+     <span class="bi bi-star-fill"></span>
+     </div>
+ </div>
+ </div>
+ <div class="card-footer">
+
+     <button  data-bs-target="#Cart" data-bs-toggle="modal" class="btn btn-danger" >Add cart</button>
+     <div class="modal" id="Cart" >
+      <div class="modal-dialog modal-dialog-centered" >
+   <div class="modal-content">
+     <div class="modal-body">
+    <h6>PRICE DETAILS</h6>
+    <div class="d-flex justify-content-between">
+    <span>Price(1 item)</span> <span class="bi bi-currency-rupee">2,199</span>
+    </div><br>
+    <div class="d-flex justify-content-between">
+     <span>Discount</span> <span class="bi bi-currency-rupee text-success">300</span>
+     </div><br>
+     <div class="d-flex justify-content-between">
+         <span>Delivery charges</span> <span class="bi bi-currency-rupee"><strike>40</strike> Free</span>
+         </div><br>
+         <div class="d-flex justify-content-between">
+             <h6>Total Amount</h6> <span class="bi bi-currency-rupee">1,869</span>
+     </div><br><br>
+     <p class="text-success">You will save <span class="bi-currency-rupee">330</span>on this order</p>
+ 
+     </div>
+ 
+   </div>
+      </div>
+     </div>
+   </div>
+ </div>
+ <div class="card bg-light p-2 m-2" style="width:300px;">
+    <div class="card-header">
+     <span class="bi bi-heart d-flex justify-content-end"></span>
+     <img  class="card-img-top mt-3"height="125"  src="public/images/shoes2.png" >
+    </div>
+    <div class="card-body">
+     <span>Sneakers & Keds</span>
+     <h6>Women colorblack Sneakers</h3><br>
+ <div class="d-flex justify-content-between">
+     <span class="bi bi-currency-dollar ">154.00</span>
+     <div class="card-rating">
+     <span class="bi bi-star-fill"></span>
+     <span class="bi bi-star-fil"></span>
+     <span class="bi bi-star-fill"></span>
+     <span class="bi bi-star-fill"></span>
+     <span class="bi bi-star-fill"></span>
+     </div>
+ </div>
+ </div>
+ <div class="card-footer">
+   <button  data-bs-target="#Cart" data-bs-toggle="modal" class="btn btn-danger" >Add cart</button>
+     <div class="modal" id="Cart" >
+      <div class="modal-dialog modal-dialog-centered" >
+   <div class="modal-content">
+     <div class="modal-body">
+    <h6>PRICE DETAILS</h6>
+    <div class="d-flex justify-content-between">
+    <span>Price(1 item)</span> <span class="bi bi-currency-rupee">2,199</span>
+    </div><br>
+    <div class="d-flex justify-content-between">
+     <span>Discount</span> <span class="bi bi-currency-rupee text-success">300</span>
+     </div><br>
+     <div class="d-flex justify-content-between">
+         <span>Delivery charges</span> <span class="bi bi-currency-rupee"><strike>40</strike> Free</span>
+         </div><br>
+         <div class="d-flex justify-content-between">
+             <h6>Total Amount</h6> <span class="bi bi-currency-rupee">1,869</span>
+     </div><br><br>
+     <p class="text-success">You will save <span class="bi-currency-rupee">330</span>on this order</p>
+ 
+     </div>
+ 
+   </div>
+      </div>
+     </div>
+   </div>
+ </div>
+ <div class="card bg-light p-2 m-2" style="width:300px;">
+    <div class="card-header">
+     <span class="bi bi-heart d-flex justify-content-end"></span>
+     <img  class="card-img-top mt-3"height="125"  src="public/images/women-t-shirt.png" >
+    </div>
+    <div class="card-body">
+     <span>Sneakers & Keds</span>
+     <h6>Women colorblack Sneakers</h3><br>
+ <div class="d-flex justify-content-between">
+     <span class="bi bi-currency-dollar ">154.00</span>
+     <div class="card-rating">
+     <span class="bi bi-star-fill"></span>
+     <span class="bi bi-star-fil"></span>
+     <span class="bi bi-star-fill"></span>
+     <span class="bi bi-star-fill"></span>
+     <span class="bi bi-star-fill"></span>
+     </div>
+ </div>
+ </div>
+ <div class="card-footer">
+     <button  data-bs-target="#Cart" data-bs-toggle="modal" class="btn btn-danger" >Add cart</button>
+     <div class="modal" id="Cart" >
+      <div class="modal-dialog modal-dialog-centered" >
+   <div class="modal-content">
+     <div class="modal-body">
+    <h6>PRICE DETAILS</h6>
+    <div class="d-flex justify-content-between">
+    <span>Price(1 item)</span> <span class="bi bi-currency-rupee">2,199</span>
+    </div><br>
+    <div class="d-flex justify-content-between">
+     <span>Discount</span> <span class="bi bi-currency-rupee text-success">300</span>
+     </div><br>
+     <div class="d-flex justify-content-between">
+         <span>Delivery charges</span> <span class="bi bi-currency-rupee"><strike>40</strike> Free</span>
+         </div><br>
+         <div class="d-flex justify-content-between">
+             <h6>Total Amount</h6> <span class="bi bi-currency-rupee">1,869</span>
+     </div><br><br>
+     <p class="text-success">You will save <span class="bi-currency-rupee">330</span>on this order</p>
+ 
+     </div>
+ 
+   </div>
+      </div>
+     </div>
+   </div>
+ </div>
+ <div class="card bg-light p-2 m-2" style="width:300px;">
+    <div class="card-header">
+     <span class="bi bi-heart d-flex justify-content-end"></span>
+     <img  class="card-img-top mt-3"height="125"  src="public/images/sho3.png" >
+    </div>
+    <div class="card-body">
+     <span>Sneakers & Keds</span>
+     <h6>Women colorblack Sneakers</h3><br>
+ <div class="d-flex justify-content-between">
+     <span class="bi bi-currency-dollar ">154.00</span>
+     <div class="card-rating">
+     <span class="bi bi-star-fill"></span>
+     <span class="bi bi-star-fil"></span>
+     <span class="bi bi-star-fill"></span>
+     <span class="bi bi-star-fill"></span>
+     <span class="bi bi-star-fill"></span>
+     </div>
+ </div>
+ </div>
+ <div class="card-footer">
+     <button  data-bs-target="#Cart" data-bs-toggle="modal" class="btn btn-danger" >Add cart</button>
+    <div class="modal" id="Cart" >
+     <div class="modal-dialog modal-dialog-centered" >
+  <div class="modal-content">
+    <div class="modal-body">
+   <h6>PRICE DETAILS</h6>
+   <div class="d-flex justify-content-between">
+   <span>Price(1 item)</span> <span class="bi bi-currency-rupee">2,199</span>
+   </div><br>
+   <div class="d-flex justify-content-between">
+    <span>Discount</span> <span class="bi bi-currency-rupee text-success">300</span>
+    </div><br>
+    <div class="d-flex justify-content-between">
+        <span>Delivery charges</span> <span class="bi bi-currency-rupee"><strike>40</strike> Free</span>
+        </div><br>
+        <div class="d-flex justify-content-between">
+            <h6>Total Amount</h6> <span class="bi bi-currency-rupee">1,869</span>
+    </div><br><br>
+    <p class="text-success">You will save <span class="bi-currency-rupee">330</span>on this order</p>
+</div>
+</div>
+     </div>
+    </div>
+   </div>
+</main>
+ 
+<div class="accordion" id="faqs">
+    <div class="accordion-item">
+    <div class="accordion-header">
+    <button data-bs-target="#q1" data-bs-toggle="collapse" class="accordion-button">what is Netflix</button>
+    </div>
+    <div class="accordion-collapse collapse" id="q1" data-bs-parent="#faqs">
+           <div class="accordion-body">
+           <p>Netflix is an American subscription video on-demand over-the-top streaming service.</p>
+          <p>Netflix is an American subscription video on-demand over-the-top streaming service.</p>
+         </div>
+             </div>
+         
+           
     
+</div>
+</section>
+
 </body>
 </html>
+
+ 
